@@ -131,3 +131,11 @@ table = {
 # print table.price
 
 #2 
+
+#Euler Problem 1
+
+
+# for i in 1..1000 
+#   if i % 3 == 0 || i % 5 == 0 
+#   end
+# end
