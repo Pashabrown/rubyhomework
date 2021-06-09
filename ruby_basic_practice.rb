@@ -80,7 +80,7 @@ p colors.shuffle{|i|}
 p colors.reverse{|i|}
 
 #question 3
-# p nums.map(&:upcase)
+puts(colors.map(&:upcase)
 # p &
 
 #Methods in ruby- functions in .js
@@ -123,11 +123,11 @@ table = {
 }
 
 #1 
-things = table, lamp, book
-def print_price do 
-    gets {things}.price
-end 
+# things = table, lamp, book
+# def print_price do 
+#     gets {things}.price
+# end 
 
-print table.price
+# print table.price
 
 #2 
