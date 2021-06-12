@@ -80,7 +80,7 @@ p colors.shuffle{|i|}
 p colors.reverse{|i|}
 
 #question 3
-puts(colors.map(&:upcase)
+# puts(colors.map(&:upcase)
 # p &
 
 #Methods in ruby- functions in .js
@@ -133,9 +133,28 @@ table = {
 #2 
 
 #Euler Problem 1
+# int result = 0;
+# for (int i = 1; i < 1000; i++) {
+#     if (((i % 3) == 0) || ((i % 5) == 0)) {
+#         result += i;
+#     }
+# }
 
 
-# for i in 1..1000 
+
+  def check_prime?
+    p prime.first(1000)
+  end
+
+
+
+
+
+
+# Prime.each(1000) do |prime|
 #   if i % 3 == 0 || i % 5 == 0 
 #   end
+#   p prime  #=> 2, 3, 5, 7, 11, ...., 97
 # end
+  
+  

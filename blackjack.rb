@@ -6,23 +6,58 @@ class Player
   attr_accessor :name
   attr_accessor :bankroll
   attr_accessor :hand
-  def initialize name, bankroll
+  attr_accessor :total
+
+  def initialize name, bankroll, hand, total
     @name = name
     @bankroll = bankroll
     @hand = []
+    @total = total
   end
 end
 
 class Card
     attr_accessor :values
+    attr_accessor :face
+    attr_accessor :suit
 
-    def initialize value
+    def initialize value, face, suit
         @value = value
+        @face = face
+        @suit = suit
     end
 end
 
-human = Player.new "Human", 1000
-the_house = Player.new "The House (dealer)", 10000
+class Deck 
+  def initialize
+    @faces = [(2..10), 'Jack', 'Queen', 'King', 'Ace']
+    @suits = ["heart", "clubs", "diamonds", "spades"]
+    @cards = []
+
+
+
+    @faces.each do |face| 
+      if face.class == Integer
+        value = face 
+      elsif face == 'Ace'
+        value = 11
+      else value == 10 
+      end
+
+    @suits.each do |suit|
+      @cards << Card.new(face,suit,value)
+    end
+
+    def generate
+
+  end
+  @cards.shuffle!
+end
+
+
+
+human = Player.new "Human", [], 100, 0
+the_house = Player.new "The House (dealer)", [], 10000, 0
 # # Set the initial values for human:
 # human.name = "Human"
 # # Set the initial values for the_house:
@@ -34,13 +69,14 @@ puts the_house.name
 puts the_house.bankroll
 
 deck = []
-function array = (i) => {
-for (let i = 2; i <=11; i++);
-    if ((i = 10)  => {
-       make i log 4 times
-    }
+# deck = [a[13], b[13], c[13], d[13]]
+# function array = (i) => {
+# for (let i = 2; i <=11; i++);
+#     if ((i = 10)  => {
+#        make i log 4 times
+#     }
 
-}
+# }
 
 
  
